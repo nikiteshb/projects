@@ -1,0 +1,22 @@
+@import '../customize-bootstrap.scss';
+@import "../../../node_modules/bootstrap/scss/bootstrap";  
+
+.brand-logo {
+	img {
+	    max-width: 40px;
+	}
+}
+
+.navbar-nav {
+  .nav-link {
+    text-transform:uppercase;
+    padding: 1.5em;
+  }
+  .nav-link.active{
+    background:$navbar-light-active-bg;
+    &:hover{
+      background: $navbar-light-active-bg-hover;
+      transition:background-color 0.4s ease-in 0s;
+    }
+  }
+}
