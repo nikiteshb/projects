@@ -6,6 +6,9 @@ import { HeroComponent } from './hero/hero.component';
   declarations: [HeroComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [
+    HeroComponent
+ ]
 })
 export class HomepageModule { }

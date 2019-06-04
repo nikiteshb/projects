@@ -6,17 +6,17 @@ import { AppComponent } from './app.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HeroComponent } from './homepage/hero/hero.component';
+import { HomepageModule } from './homepage/homepage.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    HeroComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomepageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
