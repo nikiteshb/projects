@@ -1,0 +1,28 @@
+@import "functions";
+@import "variables";
+
+footer.page-footer {
+    margin-top: 0px;
+    padding-top: 20px;
+    background-color:$gray-700;
+}
+
+.page-footer {
+    .footer-left-logo {
+        display: block;
+        max-width: 80px;
+        margin: 0 auto;
+    }
+    .social-icons{
+        li {
+            display: inline-block;
+            color: #fff;
+            a {
+                display: inline-block;
+                font-size: 36px;
+                color: #c5c5c5;
+                width: 50px;
+            }
+        }
+    }
+}
