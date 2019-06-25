@@ -2,7 +2,8 @@
 @import "functions";
 @import "variables";
 
-$limegreen:#43cea2;
+$limegreen:#a8ff78;
+$seablue:#78ffd6;
 
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
@@ -15,12 +16,20 @@ ul{
 }
 
 $theme-colors: (
-  "primary": #43cea2,
-  "danger": #ff4136
+  "primary": $seablue,
+  "secondary":$limegreen
 );
 
-$primary: $limegreen;
-$secondary: #185a9d!default;
+$theme-colors: map-merge(
+  (
+    "primary":  $seablue,
+    "secondary":  $limegreen
+  ),
+  $theme-colors
+);
+
+$primary: $seablue;
+$secondary:$limegreen;
 $white:#ffffff!default;
 
 $navbar-nav-link-padding-x: 1em;
