@@ -1,5 +1,4 @@
-@import '../customize-bootstrap.scss';
-
+@import '../../customize-bootstrap.scss';
 .brand-logo {
 	img {
 	    max-width: 40px;
@@ -15,6 +14,7 @@
     background:$navbar-light-active-bg;
     &:hover{
       background: $navbar-light-active-bg-hover;
+      color:$white;
       transition:background-color 0.4s ease-in 0s;
     }
   }
