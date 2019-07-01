@@ -1,0 +1,48 @@
+@import "mixins/gradients";
+@import 'customize-bootstrap.scss';
+
+.what_i_do_content {
+	color: $white;
+	background: repeating-linear-gradient( 45deg, $white, $white 1px, $white 1px, #e8e8e8 3px );
+	margin-bottom:0;
+
+    .icon-bg {
+        background:#ebebeb;
+        width:115px;
+        height:115px;
+        border-radius:50%;
+        vertical-align: central;
+        text-align:center;
+        line-height: 115px;
+        font-size: 32px;
+        color:$primary;
+    }
+    .icon-bg:hover, focus {
+    color:$white;
+    background:$primary;
+    }
+    .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        transform: scale(1.1);
+    }
+    .hvr-grow {
+        backface-visibility: hidden;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        display: inline-block;
+        transform: translateZ(0px);
+        transition-duration: 0.5s;
+        transition-property: transform;
+        vertical-align: middle;
+    }
+    [class^="hvr-"] {
+    background: #e1e1e1 none repeat scroll 0 0;
+    color: #666;
+    cursor: pointer;
+    margin: 0.4em;
+    padding: 1em;
+    text-decoration: none;
+    }
+    h5 {
+        color:$gray-700;
+        text-transform:uppercase;
+    }
+}
