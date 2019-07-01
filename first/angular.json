@@ -28,7 +28,8 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "./node_modules/bootstrap/scss"
+                "./node_modules/bootstrap/scss",
+                ".src/app/customize-bootstrap.scss"
               ]
             },
             "styles": [

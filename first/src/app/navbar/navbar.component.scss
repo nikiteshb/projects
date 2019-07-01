@@ -1,4 +1,11 @@
-@import '../../customize-bootstrap.scss';
+@import "mixins/gradients";
+@import 'customize-bootstrap.scss';
+
+$navbar-nav-link-padding-x: 1em;
+$navbar-light-active-color: $primary!default;
+$navbar-light-active-bg: $primary!default;
+$navbar-light-active-bg-hover:  darken($primary,12%) !default;
+
 .brand-logo {
 	img {
 	    max-width: 40px;
@@ -11,11 +18,12 @@
     padding: 1.5em;
   }
   .nav-link.active{
-    background:$navbar-light-active-bg;
+    // background:$navbar-light-active-bg;
+    @include gradient-x($navbar-light-active-bg,$secondary, 0%, 100%);
     &:hover{
-      background: $navbar-light-active-bg-hover;
+      @include gradient-x($secondary, $navbar-light-active-bg-hover, 0%, 100%);;
       color:$white;
-      transition:background-color 0.4s ease-in 0s;
+      transition:all 0.1s ease-in 0s;
     }
   }
 }
