@@ -1,0 +1,42 @@
+@import 'customize-bootstrap.scss';
+
+.software_content {
+    color: $white;
+    background: $primary;
+}
+
+
+.title-divider-white::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 65px;
+    background:$white;
+   }
+   .icons {
+       width:90px;
+       height:90px;
+       border:2px solid #EEEEEE;
+       vertical-align: central;
+       text-align:center;
+       line-height: 90px;
+       border-radius:5px;
+       font-weight:600;
+       color:$white;
+       font-size:36px;
+   }
+   .icon-ps:hover {
+       border: 2px solid #31c8f9;
+       background:#0a0919;
+       color:#31c8f9;
+   }
+   .icon-dw:hover {
+       border: 2px solid #53f900;
+       background:#0c1601;
+       color:#53f900;
+   }
+   .icon-ai:hover {
+       border: 2px solid #ff721c;
+       background:#19110e;
+       color:#ff721c;
+   }

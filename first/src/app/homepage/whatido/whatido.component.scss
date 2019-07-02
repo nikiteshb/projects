@@ -14,33 +14,14 @@
         vertical-align: central;
         text-align:center;
         line-height: 115px;
-        font-size: 32px;
-        color:$primary;
+        font-size: 40px;
+        color:darken($primary,20%);
     }
     .icon-bg:hover, focus {
     color:$white;
     background:$primary;
     }
-    .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-        transform: scale(1.1);
-    }
-    .hvr-grow {
-        backface-visibility: hidden;
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        display: inline-block;
-        transform: translateZ(0px);
-        transition-duration: 0.5s;
-        transition-property: transform;
-        vertical-align: middle;
-    }
-    [class^="hvr-"] {
-    background: #e1e1e1 none repeat scroll 0 0;
-    color: #666;
-    cursor: pointer;
-    margin: 0.4em;
-    padding: 1em;
-    text-decoration: none;
-    }
+ 
     h5 {
         color:$gray-700;
         text-transform:uppercase;
