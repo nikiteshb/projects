@@ -16,34 +16,59 @@
 }
 .hovereffect {
 	width: 100%;
-	height: 100%;
 	float: left;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
 	cursor: default;
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+	}
+	img {
+		position: relative;
+		-webkit-transition: all 0.4s ease-in;
+		transition: all 0.4s ease-in;
+		outline:#B1B1B1 1px solid;
+		MARGIN-TOP:2PX;
+		-webkit-filter: grayscale(100%);
+	 -webkit-transition: .5s ease-in-out;
+		-moz-filter: grayscale(100%);
+	 -moz-transition: .5s ease-in-out;
+		-o-filter: grayscale(100%);
+	 -o-transition: .5s ease-in-out;
+	}
+	h2 {
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+		font-size: 16px;
+		padding: 10px;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	a.info {
+		display: inline-block;
+		text-decoration: none;
+		margin: 1% 0 0 0;
+		background-color: transparent;
+	}
+	a.info,h2 {
+		-webkit-transform: scale(0.7);
+		-ms-transform: scale(0.7);
+		transform: scale(0.7);
+		-webkit-transition: all 0.4s ease-in;
+		transition: all 0.4s ease-in;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		color: #fff;
+		text-transform: uppercase;
+	}
 }
-.hovereffect .overlay {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-}
-.hovereffect img {
-	position: relative;
-	-webkit-transition: all 0.4s ease-in;
-	transition: all 0.4s ease-in;
-	outline:#B1B1B1 1px solid;
-	MARGIN-TOP:2PX;
-	-webkit-filter: grayscale(100%);
- -webkit-transition: .5s ease-in-out;
-	-moz-filter: grayscale(100%);
- -moz-transition: .5s ease-in-out;
-	-o-filter: grayscale(100%);
- -o-transition: .5s ease-in-out;
-}
+
 .hovereffect:hover img {
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
@@ -55,33 +80,7 @@
 	-o-filter: grayscale(0%);
  -o-transition: .5s ease-in-out;
 }
-.hovereffect h2 {
-	text-transform: uppercase;
-	text-align: center;
-	position: relative;
-	font-size: 16px;
-	padding: 10px;
-	background: rgba(0, 0, 0, 0.6);
-}
-.hovereffect a.info {
-	display: inline-block;
-	text-decoration: none;
-	margin: 1% 0 0 0;
-	background-color: transparent;
-}
-.hovereffect a.info:hover {
-}
-.hovereffect a.info, .hovereffect h2 {
-	-webkit-transform: scale(0.7);
-	-ms-transform: scale(0.7);
-	transform: scale(0.7);
-	-webkit-transition: all 0.4s ease-in;
-	transition: all 0.4s ease-in;
-	opacity: 0;
-	filter: alpha(opacity=0);
-	color: #fff;
-	text-transform: uppercase;
-}
+
 .hovereffect:hover a.info, .hovereffect:hover h2 {
 	opacity: 1;
 	filter: alpha(opacity=100);
