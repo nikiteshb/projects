@@ -12,7 +12,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 
-    <link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/simplemenu.css">
+	<link rel="stylesheet" href="css/verticator.css">
     <!-- <link rel="stylesheet" href="css/black.css"> -->
     
     <link rel="stylesheet" href="css/commonstyle.css">
@@ -26,29 +28,49 @@
   </head>
   <body>    
     <div class="reveal">
+		<div class="menubar">
+			<ul class="menu">
+				<!-- Here's the menu -->
+				<li><a href="#/firstchapter">First chapter</a></li>
+				<li><a href="#/secondchapter">Second chapter</a></li>
+				<li><a href="#/thirdchapter">Third chapter</a></li>
+			</ul>
+		</div>
+		<ul class="verticator"></ul>
 			<div class="slides">
-        <section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+				
+				<div class="slides">
+					<!-- Add data-attributes to the top-level sections -->
+					<section data-menu-title="firstchapter">
+						<!-- And an ID -->
+						<section id="firstchapter">
+							<h2>This is 1</h2>
+						</section>
+						<section>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+						</section>
+						<section>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+						</section>
+						<section>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+						</section>
+						<section>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+						</section>
 					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-          </section>
-          <section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
+					<section id="secondchapter" data-menu-title="secondchapter">
+						<h2>This is 2, no child slides</h2>
 					</section>
-				</section>
+					<section data-menu-title="thirdchapter">
+						<section id="thirdchapter">
+							<h2>This is 3</h2>
+						</section>
+						<section>
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+						</section>
+					</section>
+				</div>
 			</div>
 		</div>
 
@@ -63,19 +85,31 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-        controls: true,
+        		controls: true,
 				progress: false,
 				center: true,
 				hash: true,
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
-
+        		transition: 'convex', // none/fade/slide/convex/concave/zoom
+      			history: true,
+				mouseWheel: true,
+				simplemenu: {
+					// Use menuselector to assign the menu items to be used. You might want to point 
+					// it to '.menu li a' for example. In that case the class of the a's will toggle, 
+					// not the class of the li's.
+					menuselector: '.menu a',
+				
+					// Use a specific class for the active state.
+				activeclass: 'active'
+				},
 				dependencies: [
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js' },
 					{ src: 'plugin/search/search.js', async: true },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/simplemenu/simplemenu.js' },
+					{ src: 'plugin/verticator/verticator.js' },
 				]
 			});
 		</script>
