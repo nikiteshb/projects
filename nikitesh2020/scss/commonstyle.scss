@@ -1,0 +1,34 @@
+
+@import "base-include";
+
+@import "partials/menu";
+
+.line-height-125{
+    line-height: 1.25;    
+}
+.line-height-150{
+    line-height: 1.50;    
+}
+.line-height-175{
+    line-height: 1.75;    
+}
+.line-height-2{
+    line-height: 2;    
+}
+
+.global-tagline{
+    bottom: 3vmin;
+    right: auto;
+    position: absolute;
+	z-index: 10;
+}
+
+.section-title{
+    &:after{
+        content: "";
+        display: block;
+        height: 6px;
+        width: 65px;
+        background: $primary;
+    }
+}

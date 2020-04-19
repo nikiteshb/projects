@@ -1,117 +1,159 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+		rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/simplemenu.css">
-	<link rel="stylesheet" href="css/verticator.css">
-    <!-- <link rel="stylesheet" href="css/black.css"> -->
-    
-    <link rel="stylesheet" href="css/commonstyle.css">
-    <link rel="stylesheet" href="css/theme.css">
 
-    <!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/verticator.css">
+
+	<link rel="stylesheet" href="css/commonstyle.css">
+	<link rel="stylesheet" href="css/theme.css">
+
+	<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 
-    <title>Nikitesh Bhadade</title>
-  </head>
-  <body>    
-    <div class="reveal">
-		<div class="menubar">
-			<ul class="menu">
-				<!-- Here's the menu -->
-				<li><a href="#/firstchapter">First chapter</a></li>
-				<li><a href="#/secondchapter">Second chapter</a></li>
-				<li><a href="#/thirdchapter">Third chapter</a></li>
-			</ul>
-		</div>
-		<ul class="verticator"></ul>
-			<div class="slides">
-				
-				<div class="slides">
-					<!-- Add data-attributes to the top-level sections -->
-					<section data-menu-title="firstchapter">
-						<!-- And an ID -->
-						<section id="firstchapter">
-							<h2>This is 1</h2>
-						</section>
-						<section>
-							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-						</section>
-						<section>
-							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-						</section>
-						<section>
-							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-						</section>
-						<section>
-							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-						</section>
-					</section>
-					<section id="secondchapter" data-menu-title="secondchapter">
-						<h2>This is 2, no child slides</h2>
-					</section>
-					<section data-menu-title="thirdchapter">
-						<section id="thirdchapter">
-							<h2>This is 3</h2>
-						</section>
-						<section>
-							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-						</section>
-					</section>
-				</div>
-			</div>
-		</div>
+	<title>Nikitesh Bhadade</title>
+</head>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/reveal.js"></script>
-    <script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-        		controls: true,
-				progress: false,
-				center: true,
-				hash: true,
-        		transition: 'convex', // none/fade/slide/convex/concave/zoom
-      			history: true,
-				mouseWheel: true,
-				simplemenu: {
-					// Use menuselector to assign the menu items to be used. You might want to point 
-					// it to '.menu li a' for example. In that case the class of the a's will toggle, 
-					// not the class of the li's.
-					menuselector: '.menu a',
-				
-					// Use a specific class for the active state.
+<body>
+	<div class="reveal">
+		<div class="container-fluid">
+			<div class="menubar">
+				<ul class="menu">
+					<!-- Here's the menu -->
+					<li>
+						<a href="#/home">
+							<div class="logo-box">
+								<img src="images/logo.svg" alt="" class="img-fluid">
+							</div>
+						</a>
+					</li>
+					<li><a href="#/about">About</a></li>
+					<li><a href="#/portfolio">Portfolio</a></li>
+					<li><a href="#/instagram">Instagram</a></li>
+					<li><a href="#/contact">Contact</a></li>
+					<li><a href="#/blog">Blog</a></li>
+				</ul>
+			</div>
+			<div class="global-tagline flex flex-column">
+				<h3>Nikitesh</h3>
+				<h6>Think More, Design Minimal</h6>
+			</div>
+			<ul class="verticator"></ul>
+		</div>
+		<div class="slides">
+			<section data-menu-title="home">
+				<!-- And an ID -->
+				<section id="home">
+					<div class="container border">
+						<h2>I am Nikitesh Bhadade</h2>
+					</div>
+				</section>
+			</section>
+			<section data-menu-title="about" data-transition="slide">
+				<section id="about" class="text-left">
+					<h2 class="section-title text-secondary py-2">HELLO,</h2>
+					<div class="intropara font-weight-lighter"> I live in a Big town somewhere in the world. I am passionated about 
+						<strong class="text-primary">Minimalistic</strong> and <strong class="text-primary">Flat Design. </strong>
+						 I like to solve design problems, create smart user interface and imagine useful interactions.
+					</div>
+				</section>
+				<section>
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+				</section>
+				<section>
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+				</section>
+			</section>
+			<section data-menu-title="portfolio" data-transition="slide">
+				<section id="portfolio">
+					<h2>This is 3</h2>
+				</section>
+				<section>
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+				</section>
+				<section>
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+				</section>
+				<section>
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+				</section>
+			</section>
+			<section data-menu-title="instagram" data-transition="slide">
+				<section id="instagram">
+					<h2>This is 4</h2>
+				</section>
+				<section>
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.esdfsdf</h4>
+				</section>
+				<section>
+					<h4>Lorem ipsum dolor sit amet, consecsdfdsftetur adipiscing elit.</h4>
+				</section>
+				<section>
+					<h4>Lorem ipsum dolor sit amet, sdf adipiscing elit.</h4>
+				</section>
+			</section>
+			<section data-menu-title="contact" data-transition="slide">
+				<section id="contact">
+					<h2>contact</h2>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.4.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			controls: true,
+			progress: false,
+			center: true,
+			hash: true,
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			backgroundTransition: 'fade',
+			history: true,
+			mouseWheel: true,
+			simplemenu: {
+				// Use menuselector to assign the menu items to be used. You might want to point 
+				// it to '.menu li a' for example. In that case the class of the a's will toggle, 
+				// not the class of the li's.
+				menuselector: '.menu a',
+
+				// Use a specific class for the active state.
 				activeclass: 'active'
-				},
-				dependencies: [
-         			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/search/search.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/simplemenu/simplemenu.js' },
-					{ src: 'plugin/verticator/verticator.js' },
-				]
-			});
-		</script>
-  </body>
+			},
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js' },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/simplemenu/simplemenu.js' },
+				{ src: 'plugin/verticator/verticator.js' },
+			]
+		});
+	</script>
+</body>
+
 </html>
