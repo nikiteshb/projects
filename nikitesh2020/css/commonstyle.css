@@ -6,12 +6,12 @@
 .reveal ul.menu {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 0;
 }
 .reveal .menu ul li a,
 .reveal ul.menu li a {
   color: #5f4c4a;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   text-transform: uppercase;
   padding: 0.25rem 0rem 0.5rem;
   display: block;
@@ -27,9 +27,33 @@
   height: 50px;
   width: 50px;
 }
+.reveal .menu ul li a .logo-box svg,
+.reveal ul.menu li a .logo-box svg {
+  stroke-width: 3px;
+  fill: none;
+  stroke: #000;
+  transition: all ease 0.5s;
+}
+@media (max-width: 767.98px) {
+  .reveal .menu ul li a,
+.reveal ul.menu li a {
+    font-size: 0.875rem;
+    padding: 0.25rem 0rem 0.25rem;
+  }
+  .reveal .menu ul li a .logo-box,
+.reveal ul.menu li a .logo-box {
+    height: 30px;
+    width: 30px;
+  }
+}
 .reveal .menu ul li .active,
 .reveal ul.menu li .active {
   color: #89b6c1;
+}
+.reveal .menu ul li .active .logo-box svg,
+.reveal ul.menu li .active .logo-box svg {
+  fill: #89b6c1;
+  stroke: #89b6c1;
 }
 
 .line-height-125 {

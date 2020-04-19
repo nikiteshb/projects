@@ -3,12 +3,7 @@
 }
 
 .intropara {
-  font-size: 2.5rem;
-}
-@media (max-width: 1200px) {
-  .intropara {
-    font-size: calc(1.375rem + 1.5vw);
-  }
+  font-size: 40px;
 }
 
 /*# sourceMappingURL=theme.css.map */
