@@ -3,6 +3,9 @@
 
 @import "partials/menu";
 
+.font12{
+    @include rfs(12);
+}
 .font30{
     @include rfs(30);
 }

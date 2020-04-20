@@ -1,37 +1,33 @@
 @import "custom-mixin";
 
-.reveal {
-	.logo-box{
-		margin: 0;
-		padding: 0.50rem 0;
-		display: block;
+.left-box {
 		position: absolute;
 		z-index: 10;
+		margin: 0;
+		padding: 0.50rem 0;
+	.logo-box{
+		padding: 0.50rem;
+		display: block;
 		svg{
-			@include square(50px,50px);
+			@include square(30px,30px);
 			stroke-width:3px;
 			fill:none;
 			stroke:$black;
 			transition: all ease 0.5s;
 		}
 	}
-	
-	.menubar {
-		position: absolute;
-		z-index: 10;
-		right: 5px;
-		.menu-btn-wrapper{
-			.menu-btn{
-				height: 30px;
-				margin: 0.5rem;
-				svg{
-					@include square(20px,20px);
-				}
+	.menu-btn-wrapper{
+		.menu-btn{
+			height: 30px;
+			margin: 0 0.5rem;
+			cursor: pointer;
+			svg{
+				@include square(20px,20px);
+				transform: rotateY(190deg);
 			}
 		}
-		
-	}
-
+	}	
+	
 	.menu ul,
 	ul.menu {
 		opacity: 0;

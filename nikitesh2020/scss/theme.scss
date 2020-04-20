@@ -13,15 +13,26 @@
         @include square(115px,115px);
         border:1px solid $primary;
         transition: all 0.5s;
-        .fas{
-            color: $primary;
+        svg{
+            @include square(50px,50px); 
+            fill: $primary;
         }
         &:hover{
             background:$primary;
             cursor: pointer;
             transform: scale(1.2);
-            .fas{
-                color: $white;
+            svg{
+                fill: $white;
+            }
+        }
+    }
+}
+.devices{
+    .devices-icon{
+        .fas{
+            transition: all ease 0.3s;
+            &:hover{
+                transform: scale(1.2);
             }
         }
     }
