@@ -8,3 +8,21 @@
 .intropara{
     font-size: 40px;
 }
+.aboutus{
+    .icon-bg{
+        @include square(115px,115px);
+        border:1px solid $primary;
+        transition: all 0.5s;
+        .fas{
+            color: $primary;
+        }
+        &:hover{
+            background:$primary;
+            cursor: pointer;
+            transform: scale(1.2);
+            .fas{
+                color: $white;
+            }
+        }
+    }
+}

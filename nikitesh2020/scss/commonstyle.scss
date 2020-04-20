@@ -3,6 +3,9 @@
 
 @import "partials/menu";
 
+.font30{
+    @include rfs(30);
+}
 .line-height-125{
     line-height: 1.25;    
 }
@@ -24,11 +27,15 @@
 }
 
 .section-title{
+    @include rfs(40);
     &:after{
         content: "";
         display: block;
         height: 6px;
         width: 65px;
         background: $primary;
+        transform: translate(-50%, 10px);
+        left: 50%;
+        position: absolute;
     }
 }
