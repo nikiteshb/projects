@@ -42,16 +42,16 @@
 		li{
 			a{
 				color: $secondary;
-				@include rfs(18);				
+				@include rfs(16);				
 				text-transform: uppercase;
-				padding: 0.25rem 0rem 0.50rem;
+				padding: 0.15rem 0rem 0.25rem;
 				display: block;
 				&:hover,&:active,&:focus{
 					color: $primary;
 				}				
 				@include media-breakpoint-down(sm) { 
-					@include rfs(14);	
-					padding: 0.25rem 0rem 0.25rem;
+					@include rfs(12);	
+					padding: 0.15rem 0rem 0.25rem;
 					.logo-box{
 						@include square(30px,30px);
 					}
