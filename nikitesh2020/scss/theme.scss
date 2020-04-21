@@ -27,13 +27,21 @@
         }
     }
 }
+
 .devices{
     .devices-icon{
-        .fas{
+        @include square(115px,115px);
+        svg{
             transition: all ease 0.3s;
+            fill: $primary;
             &:hover{
                 transform: scale(1.2);
             }
         }
+    }
+}
+.skills{
+    .progress{
+        height: 0.5rem;
     }
 }
