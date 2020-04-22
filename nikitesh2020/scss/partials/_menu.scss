@@ -6,7 +6,7 @@
 		margin: 0;
 		padding: 0.50rem 0;
 	.logo-box{
-		padding: 0.50rem;
+		padding: 0 .5rem;
 		display: block;
 		svg{
 			@include square(30px,30px);
@@ -47,7 +47,7 @@
 				}				
 				@include media-breakpoint-down(sm) { 
 					@include rfs(12);	
-					padding: 0.15rem 0rem 0.25rem;
+					padding: 0.15rem 0rem;
 					.logo-box{
 						@include square(30px,30px);
 					}

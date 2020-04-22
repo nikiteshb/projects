@@ -3,8 +3,21 @@
 
 @import "partials/menu";
 
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style-type: none;
+    }
+}
 .font12{
     @include rfs(12);
+}
+.font16{
+    @include rfs(16);
+}
+.font20{
+    @include rfs(20);
 }
 .font30{
     @include rfs(30);
