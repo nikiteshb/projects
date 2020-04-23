@@ -40,9 +40,12 @@
             a{
                 @include square(12px,12px);
                 margin: 0 0.25rem;
+                &::before{
+                    transform: translate(0, 14px);
+                }
                 &:hover{
                     &::before{
-                        width: 12px;                                  
+                        width: 12px;                                                  
                     }
                 }
             }
