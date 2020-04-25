@@ -4,7 +4,7 @@
     @include square(600px,600px);
 }
 .intropara{
-    font-size: 40px;
+    @include rfs(30);
 }
 .aboutus{
     .icon-bg{

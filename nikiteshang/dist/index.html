@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>App</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.2936fdd2cf798e86b046.css"></head>
+<body>
+  <app-root></app-root>
+
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.slim.min.js"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/reveal.js"></script>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		
+	</script>
+	<script>
+		$(document).ready(function () {
+			$(".menu-btn").click(function () {
+				$(".menu").toggleClass("menu-open");
+      });
+      
+      Reveal.initialize({
+			controls: true,
+			progress: false,
+			center: true,
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			backgroundTransition: 'fade',
+			history: true,
+			mouseWheel: true,
+			simplemenu: {
+				// Use menuselector to assign the menu items to be used. You might want to point 
+				// it to '.menu li a' for example. In that case the class of the a's will toggle, 
+				// not the class of the li's.
+				menuselector: '.menu a',
+
+				// Use a specific class for the active state.
+				activeclass: 'active'
+			},
+			dependencies: [
+				{ src: 'assets/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'assets/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'assets/plugin/highlight/highlight.js' },
+				{ src: 'assets/plugin/search/search.js', async: true },
+				{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+				{ src: 'assets/plugin/notes/notes.js', async: true },
+				{ src: 'assets/plugin/simplemenu/simplemenu.js' },
+				{ src: 'assets/plugin/verticator/verticator.js' },
+			]
+    });
+    
+		});
+	</script>
+<script src="runtime-es2015.0811dcefd377500b5b1a.js" type="module"></script><script src="runtime-es5.0811dcefd377500b5b1a.js" nomodule defer></script><script src="polyfills-es5.a8d201329e07c17fc665.js" nomodule defer></script><script src="polyfills-es2015.1f913f16a2d346cc8bdc.js" type="module"></script><script src="main-es2015.3419d85781a40c711f03.js" type="module"></script><script src="main-es5.3419d85781a40c711f03.js" nomodule defer></script></body>
+</html>
