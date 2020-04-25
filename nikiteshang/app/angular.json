@@ -40,8 +40,6 @@
               "src/assets/custom-scss/common.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.js",
-              "src/assets/js/bootstrap.min.js"
             ]
           },
           "configurations": {
