@@ -1,0 +1,23 @@
+<div class="container custom-container">
+    <div class="col-12 col-md-4 py-5 mx-auto">
+      <h3 class="mb-3 text-center">Create User</h3>
+      <!-- <div class="form-group">
+        <input type="text" [(ngModel)]="userDetails.userId" class="form-control" placeholder="userId">
+      </div> -->
+      <div class="form-group">
+        <input type="text" [(ngModel)]="userDetails.name" class="form-control" placeholder="Name" [formControl]="name">
+      </div>
+  
+      <div class="form-group">
+        <input type="text" [(ngModel)]="userDetails.age" class="form-control" placeholder="age" [formControl]="age">
+      </div>
+  
+      <div class="form-group">
+        <input type="text" [(ngModel)]="userDetails.location" class="form-control" placeholder="location" [formControl]="location">
+      </div>
+  
+      <div class="form-group">
+        <button class="btn btn-primary text-uppercase font12" (click)="addUser()" type="submit">Create user</button>
+      </div>
+    </div>
+  </div>
