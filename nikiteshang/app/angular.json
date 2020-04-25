@@ -30,13 +30,14 @@
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src/assets/bootstrap/scss/",
-                "src/assets/custom-scss/"
+                "src/assets/custom-scss/",
+                "src/assets/"
               ]
             },
             "styles": [              
               "src/assets/bootstrap/scss/bootstrap.scss",
               "src/assets/custom-scss/custom.scss",
-              "src/styles.scss"
+              "src/assets/custom-scss/common.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",

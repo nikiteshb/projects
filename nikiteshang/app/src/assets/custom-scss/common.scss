@@ -1,0 +1,141 @@
+@import "custom";
+
+.font-weight-medium{
+    font-weight: $font-weight-medium;
+}
+.font-weight-semibold{
+    font-weight: $font-weight-semibold;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style-type: none;
+    }
+}
+.font12{
+    @include rfs(12);
+}
+.font16{
+    @include rfs(16);
+}
+.font20{
+    @include rfs(20);
+}
+.font30{
+    @include rfs(30);
+}
+.line-height-125{
+    line-height: 1.25;    
+}
+.line-height-150{
+    line-height: 1.50;    
+}
+.line-height-175{
+    line-height: 1.75;    
+}
+.line-height-2{
+    line-height: 2;    
+}
+
+.global-tagline{
+    bottom: 3vmin;
+    right: auto;
+    position: absolute;
+	z-index: 10;
+}
+
+.section-title{
+    @include rfs(40);
+    &:after{
+        content: "";
+        display: block;
+        height: 6px;
+        width: 65px;
+        background: $primary;
+        transform: translate(-50%, 10px);
+        left: 50%;
+        position: absolute;
+    }
+}
+
+
+
+
+
+.share-icons{
+    li {
+        display: inline-block;
+        a{
+            @include square(24px,24px);
+            margin:0 0.5em;
+            display: block;
+            &:before{
+                content: "";
+                @include square(2px,0px);
+                background: $black;
+                bottom: 0;
+                position: absolute;
+                transform: translate(0, 10px);
+                transition: linear 0.5s;
+            }
+            &:hover{
+                &:before{
+                    width: 24px;                                  
+                }
+            }
+        }
+    }
+}
+
+
+.top-social{
+    position: absolute;
+    right: 15px;
+    z-index: 10;
+    .follow-text{
+        position: relative;
+        width: 130px;
+        &::before{
+            content: '';
+            position: absolute;
+            @include square(16px,0px);        
+            background: $primary;
+            transform: translate(0, 0);
+            transition: linear 0.1s;
+            z-index: -1;
+        }
+        &:hover{
+            color:$white;
+            &::before{
+                @include square(16px,50px);
+            }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            @include square(2px,60px);        
+            background: $black;
+            transform: translate(5%, 0);
+            top: 50%;
+        }
+    }
+    .share-icons{
+        li {
+            display: inline-block;
+            a{
+                @include square(12px,12px);
+                margin: 0 0.25rem;
+                &:before{
+                    transform: translate(0, 14px);
+                }
+                &:hover{
+                    &:before{
+                        width: 12px;                                                  
+                    }
+                }
+            }
+        }
+    }
+}

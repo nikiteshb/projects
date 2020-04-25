@@ -1,0 +1,72 @@
+@import "custom";
+
+.left-box {
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    padding: 0.50rem 0;
+.logo-box{
+    padding: 0 .5rem;
+    display: block;
+    svg{
+        @include square(30px,30px);
+        stroke-width:3px;
+        fill:none;
+        stroke:$black;
+        transition: all ease 0.5s;
+    }
+}
+.menu-btn-wrapper{
+    .menu-btn{
+        height: 30px;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        svg{
+            @include square(20px,20px);
+            transform: rotateY(190deg);
+        }
+    }
+}	
+
+.menu ul,
+ul.menu {
+    opacity: 0;
+    transition: all ease 0.5s;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.25rem 0.50rem;
+    li{
+        a{
+            color: $secondary;
+            @include rfs(16);				
+            text-transform: uppercase;
+            padding: 0.15rem 0rem 0.25rem;
+            display: block;
+            &:hover,&:active,&:focus{
+                color: $primary;
+            }				
+            @include media-breakpoint-down(sm) { 
+                @include rfs(12);	
+                padding: 0.15rem 0rem;
+                .logo-box{
+                    @include square(30px,30px);
+                }
+            }
+        }			
+        .active{
+            color: $primary;
+            .logo-box{
+                svg{
+                    fill: $primary;
+                    stroke: $primary;
+                }
+            }
+        }
+
+    }
+}
+.menu ul.menu-open,
+ul.menu.menu-open{
+    opacity: 1;
+}
+}

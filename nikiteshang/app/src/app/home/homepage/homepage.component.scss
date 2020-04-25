@@ -1,0 +1,57 @@
+@import "custom";
+
+.hero-image{
+    @include square(600px,600px);
+}
+.intropara{
+    font-size: 40px;
+}
+.aboutus{
+    .icon-bg{
+        @include square(115px,115px);
+        border:1px solid $primary;
+        transition: all 0.5s;
+        svg{
+            @include square(50px,50px); 
+            fill: $primary;
+        }
+        &:hover{
+            background:$primary;
+            cursor: pointer;
+            transform: scale(1.2);
+            svg{
+                fill: $white;
+            }
+        }
+    }
+}
+
+.devices{
+    .devices-icon{
+        @include square(115px,115px);
+        svg{
+            transition: all ease 0.3s;
+            fill: $primary;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+.skills{
+    .progress{
+        height: 0.5rem;
+    }
+}
+.follow-text{
+    position: relative;
+    width: 250px;
+    &::after{
+        content: '';
+        position: absolute;
+        @include square(2px,60px);        
+        background: $black;
+        transform: translate(20%, 0);
+        top: 50%;
+    }
+}
