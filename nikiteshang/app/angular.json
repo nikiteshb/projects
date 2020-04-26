@@ -40,6 +40,11 @@
               "src/assets/custom-scss/common.scss"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/reveal.js",             
+              "src/assets/js/custom.js"
             ]
           },
           "configurations": {
