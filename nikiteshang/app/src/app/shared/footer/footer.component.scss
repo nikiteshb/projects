@@ -14,7 +14,14 @@
     left: 50%;
     transform: translate(-50%,0);
     z-index: 10;
+    @include rfs(12);
     svg{
         @include square(12px,12px);
+    }
+    @include media-breakpoint-down(sm) { 
+        @include rfs(10);
+        left: 10px;
+        transform: none;
+        bottom: 1vmin;
     }
 }
