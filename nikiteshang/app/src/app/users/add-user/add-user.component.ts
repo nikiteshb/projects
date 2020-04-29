@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { RestApiService } from 'src/app/shared/rest-api.service';
 import { FormControl, FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
+import { RestApiService } from 'src/app/shared/rest-api.service';
 
 @Component({
   selector: 'app-add-user',
@@ -24,11 +24,11 @@ export class AddUserComponent implements OnInit {
   userDetails = { name: this.name.value, age: this.age.value, location: this.location.value }
 
   constructor(
-    private fb: FormBuilder,
+    public fb: FormBuilder,
     public restApi: RestApiService, 
     // public router: Router,
-    private route: ActivatedRoute,
-    private router: Router
+    public route: ActivatedRoute,
+    public router: Router
   ) { }
 
   ngOnInit() { }

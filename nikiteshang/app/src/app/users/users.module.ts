@@ -28,4 +28,6 @@ import { ListUserComponent } from './list-user/list-user.component';
     ListUserComponent
   ]
 })
-export class UsersModule { }
+export class UsersModule {
+  
+ }
