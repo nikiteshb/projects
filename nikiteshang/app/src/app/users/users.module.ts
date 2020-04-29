@@ -20,7 +20,7 @@ import { ListUserComponent } from './list-user/list-user.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   exports:[
     AddUserComponent,
@@ -28,6 +28,4 @@ import { ListUserComponent } from './list-user/list-user.component';
     ListUserComponent
   ]
 })
-export class UsersModule {
-  
- }
+export class UsersModule { }
