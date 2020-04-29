@@ -10,13 +10,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
+import { UsersModule } from './users/users.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AddUserComponent,
-    EditUserComponent,
-    ListUserComponent
+    AppComponent    
   ],
   imports: [
     BrowserModule,
@@ -25,7 +23,8 @@ import { SharedModule } from './shared/shared.module';
     FormsModule,
     ReactiveFormsModule,
     HomeModule,
-    SharedModule
+    SharedModule,
+    UsersModule
   ],
   exports:[
     SharedModule
