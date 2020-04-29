@@ -30,7 +30,7 @@ $(document).ready(function () {
 			// { src: 'assets/plugin/zoom-js/zoom.js', async: true },
 			// { src: 'assets/plugin/notes/notes.js', async: true },
 			// { src: 'assets/plugin/simplemenu/simplemenu.js' },
-			{ src: 'assets/plugin/verticator/verticator.js' },
+			{ src: './assets/plugin/verticator/verticator.js' },
 		]
 	});
 
