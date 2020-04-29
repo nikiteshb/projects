@@ -1,27 +1,30 @@
 @import "custom";
 
-.global-tagline{
-    bottom: 3vmin;
-    right: auto;
-    position: absolute;
-    z-index: 10;
-    padding: 0 0.50rem;
-}
-
-.copyright{
-    position: absolute;
-    bottom: 3vmin;
-    left: 50%;
-    transform: translate(-50%,0);
-    z-index: 10;
-    @include rfs(12);
-    svg{
-        @include square(12px,12px);
+footer{
+    .global-tagline{
+        display: none;
+        bottom: 3vmin;
+        right: auto;
+        position: absolute;
+        z-index: 10;
+        padding: 0 0.50rem;
     }
-    @include media-breakpoint-down(sm) { 
-        @include rfs(10);
-        left: 10px;
-        transform: none;
-        bottom: 1vmin;
+    
+    .copyright{
+        position: relative;
+        bottom: 3vmin;
+        left: 50%;
+        transform: translate(-50%,0);
+        z-index: 10;
+        @include rfs(12);
+        svg{
+            @include square(12px,12px);
+        }
+        @include media-breakpoint-down(sm) { 
+            @include rfs(10);
+            left: 10px;
+            transform: none;
+            bottom: 1vmin;
+        }
     }
 }
