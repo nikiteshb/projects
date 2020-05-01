@@ -1,0 +1,40 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+    <div class="row pb-3">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First name" formControlName="firstName">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" formControlName="lastName">
+        </div>
+    </div>
+    <div class="row pb-3">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Email" formControlName="email">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Contact Number" formControlName="contactNo">
+        </div>
+    </div>
+    <div class="row pb-3">
+        <div class="col">
+            <textarea type="text" class="form-control" placeholder="Message" formControlName="message" rows="3"></textarea>
+        </div>
+    </div>
+
+
+    <button class="btn btn-outline-primary " type="submit" [disabled]="!contactForm.valid">Submit</button>
+</form>
+
+<hr>
+
+
+<p>
+    Form Value: {{ contactForm.value | json }}
+</p>
+
+
+<p>
+    Form Status: {{ contactForm.status }}
+</p>
+

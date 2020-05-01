@@ -8,10 +8,11 @@ import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { UsersModule } from './users/users.module';
 import { RouterModule } from '@angular/router';
+import { ContactformComponent } from './shared/contactform/contactform.component';
 
 @NgModule({
   declarations: [
-    AppComponent 
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +27,7 @@ import { RouterModule } from '@angular/router';
     HttpClientModule
   ],
   exports:[
-
+    SharedModule
   ],
   providers: [Meta],
   bootstrap: [AppComponent]

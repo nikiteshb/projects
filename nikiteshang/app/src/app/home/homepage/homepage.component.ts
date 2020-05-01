@@ -7,9 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  // loadScripts() {
+  //   const dynamicScripts = [
+  //    './assets/js/reveal.js'
+  //   ];
+  //   for (let i = 0; i < dynamicScripts.length; i++) {
+  //     const node = document.createElement('script');
+  //     node.src = dynamicScripts[i];
+  //     node.type = 'text/javascript';
+  //     node.async = true;
+  //     node.charset = 'utf-8';
+  //     document.getElementsByTagName('head')[0].appendChild(node);
+  //   }
+  // }
 
-  ngOnInit(): void {
+  constructor() { 
+    
+  }
+
+  ngOnInit(){
+    // this.loadScripts();
   }
 
 }
