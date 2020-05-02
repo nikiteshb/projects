@@ -3,3 +3,5 @@ export class User {
    age: number;
    location: string;
 }
+
+

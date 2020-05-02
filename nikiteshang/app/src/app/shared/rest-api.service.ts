@@ -3,14 +3,15 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { User } from '../shared/user';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
+import { Lead } from '../shared/lead';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RestApiService {
   // Define API
-  // apiURL = 'http://localhost:3000';
-  apiURL = 'https://apinikitesh.herokuapp.com';
+  apiURL = 'http://localhost:3000';
+  // apiURL = 'https://apinikitesh.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 
@@ -60,6 +61,15 @@ export class RestApiService {
       catchError(this.handleError)
     )
   }  
+
+    // HttpClient API post() method => Create user
+    createLead(contactLeads): Observable<Lead> {
+      return this.http.post<Lead>(this.apiURL + '/contactleads/', JSON.stringify(contactLeads), this.httpOptions)
+      .pipe(
+        retry(0),
+        catchError(this.handleError)
+      )
+    }  
 
   // HttpClient API put() method => Update user
   
