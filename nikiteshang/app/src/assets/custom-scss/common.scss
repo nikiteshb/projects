@@ -34,6 +34,15 @@ ul{
 .font20{
     @include rfs(20);
 }
+.font22{
+    @include rfs(22);
+}
+.font24{
+    @include rfs(24);
+}
+.font26{
+    @include rfs(26);
+}
 .font30{
     @include rfs(30);
 }
