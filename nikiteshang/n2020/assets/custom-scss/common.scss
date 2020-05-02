@@ -28,6 +28,9 @@ ul{
 .font16{
     @include rfs(16);
 }
+.font18{
+    @include rfs(18);
+}
 .font20{
     @include rfs(20);
 }

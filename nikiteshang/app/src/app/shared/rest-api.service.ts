@@ -10,8 +10,8 @@ import { Lead } from '../shared/lead';
 })
 export class RestApiService {
   // Define API
-  apiURL = 'http://localhost:3000';
-  // apiURL = 'https://apinikitesh.herokuapp.com';
+  // apiURL = 'http://localhost:3000';
+  apiURL = 'https://apinikitesh.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 

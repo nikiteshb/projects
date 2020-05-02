@@ -19,7 +19,7 @@ export class ContactformComponent implements OnInit {
   contactForm = this.fb.group({
     firstName: ['', Validators.required],
     lastName: ['', Validators.required],
-    emailId: ['', Validators.required, Validators.email,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),],
+    emailId: ['', Validators.required],
     contactNo: ['', Validators.required],
     message: ['']    
   });
