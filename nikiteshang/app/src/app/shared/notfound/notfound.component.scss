@@ -1,0 +1,23 @@
+@import 'custom';
+.icon-404{
+    max-width: 300px;
+    svg{
+        width: 300px;
+        fill: $ternary;
+        @include media-breakpoint-down(md){
+            width: 200px;
+        }
+    }
+}
+
+.right-arrow-404{
+    svg{
+        @include square(20px,20px);
+        fill:$primary;
+        transition: right-arrow 3s;
+        @keyframes right-arrow {
+            from {transform: translate(0,0px);}
+            to {transform: translate(0,5px);}
+          }
+    }
+}

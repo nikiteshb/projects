@@ -8,7 +8,7 @@ import { Title, Meta } from '@angular/platform-browser';
 })
 
 export class AppComponent implements OnInit{
-  title = 'Nikitesh Bhadade';
+  title = 'Nikitesh Bhadade Web Designer';
 
   constructor(private titleService: Title, private metaService: Meta) {}
 
@@ -19,7 +19,10 @@ export class AppComponent implements OnInit{
       {name: 'description', content: 'I live in a Big town somewhere in the world. I am passionated about Minimalistic and Flat Design. I like to resolve design problems, create smart user interface and imagine useful interaction.'},
       {name: 'robots', content: 'index, follow'},
       {name: 'author', content: 'Nikitesh Bhadade' },
-      {charset: 'UTF-8' }
+      {charset: 'UTF-8' },
+      {name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
+      {name: 'apple-mobile-web-app-capable', content: 'yes'},
+      {name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}
     ]);
   
   }

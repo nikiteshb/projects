@@ -7,11 +7,13 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ContactformComponent } from './contactform/contactform.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NotfoundComponent } from './notfound/notfound.component';
 @NgModule({
   declarations: [    
     HeaderComponent,
     FooterComponent,
-    ContactformComponent
+    ContactformComponent,
+    NotfoundComponent
   ],
   imports: [
     CommonModule,
