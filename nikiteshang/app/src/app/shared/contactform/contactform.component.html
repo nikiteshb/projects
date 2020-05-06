@@ -2,14 +2,14 @@
 
     <div class="row">
         <div class="col-6 col-sm-12 col-md-6 mb-4 mb-md-2">
-            <input type="text" class="form-control" placeholder="First name" formControlName="firstName">
+            <input type="text" class="form-control font22" placeholder="First name" formControlName="firstName">
             <div *ngIf="contactFormControl.firstName.touched" class="has-error font12 text-left pt-2">
                 <div *ngIf="contactFormControl.firstName.errors?.required">First Name is required</div>
                 <div *ngIf="contactFormControl.firstName.errors?.minlength">Minimum 2 Characters required</div>
             </div>
         </div>
         <div class="col-6 col-sm-12 col-md-6 mb-4 mb-md-2">
-            <input type="text" class="form-control" placeholder="Last name" formControlName="lastName">
+            <input type="text" class="form-control font22" placeholder="Last name" formControlName="lastName">
             <div *ngIf="contactFormControl.lastName.touched" class="has-error font12 text-left pt-2">
                 <div *ngIf="contactFormControl.lastName.errors?.required">Last Name is required</div>
                 <div *ngIf="contactFormControl.lastName.errors?.minlength">Minimum 2 Characters required</div>
@@ -18,14 +18,14 @@
     </div>
     <div class="row">
         <div class="col-6 col-sm-12 col-md-6 mb-4 mb-md-2">
-            <input type="email" class="form-control" placeholder="Email" formControlName="emailId">
+            <input type="email" class="form-control font22" placeholder="Email" formControlName="emailId">
             <div *ngIf="contactFormControl.emailId.touched" class="has-error font12 text-left pt-2">
                 <div *ngIf="contactFormControl.emailId.errors?.required">Email is required</div>
                 <div *ngIf="contactFormControl.emailId.errors?.email">Valid Email is required</div>
             </div>
         </div>
         <div class="col-6 col-sm-12 col-md-6 mb-4 mb-md-2">
-            <input type="number" class="form-control" placeholder="Contact Number" formControlName="contactNo">
+            <input type="number" class="form-control font22" placeholder="Contact Number" formControlName="contactNo">
             <div *ngIf="contactFormControl.contactNo.touched" class="has-error font12 text-left pt-2">
                 <div *ngIf="contactFormControl.contactNo.errors?.required">Contact No is required</div>
                 <div *ngIf="contactFormControl.contactNo.errors?.minlength">Minimum 10 Digits required</div>
@@ -34,14 +34,14 @@
     </div>
     <div class="row">
         <div class="col-12  mb-4 mb-md-2">
-            <textarea type="text" class="form-control" placeholder="Message" formControlName="message" rows="3"></textarea>
+            <textarea type="text" class="form-control font22" placeholder="Message" formControlName="message" rows="3"></textarea>
         </div>
     </div>
 
 
     <button class="btn btn-secondary my-3 px-4" type="submit" [disabled]="!contactForm.valid">
         <ng-container *ngIf="isSubmitting; else defaultText">
-            <div class="spinner-grow spinner-grow-sm text-primary" role="status">                           
+            <div class="spinner-grow spinner-grow-sm text-primary font30" role="status">                           
             </div>
             Submitting 
         </ng-container>

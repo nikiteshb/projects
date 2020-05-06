@@ -5,6 +5,9 @@
 }
 .intropara{
     font-size: 30px;
+    @include media-breakpoint-up(md){
+        font-weight: $font-weight-light;
+    }
 }
 .aboutus{
     .icon-bg{
