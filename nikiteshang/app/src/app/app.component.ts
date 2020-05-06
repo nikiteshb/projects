@@ -22,7 +22,15 @@ export class AppComponent implements OnInit{
       {charset: 'UTF-8' },
       {name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
       {name: 'apple-mobile-web-app-capable', content: 'yes'},
-      {name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'}
+      {name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'},
+      {name: 'og:type', content: 'website'},
+      {name: 'og:title', content: 'Nikitesh Bhadade - Web Designer - UI/UX Developer'},
+      {name: 'og:description', content: 'HELLO,I live in a Big town somewhere in the world. I am passionated about Minimalistic and Flat Design. I like to solve design problems, create smart user interface and imagine useful interactions.'},
+      {name: 'og:url', content: 'http://nikitesh.com/'},
+      {name: 'og:site_name', content: 'Nikitesh Bhadade'},
+      {name: 'og:image', content: 'http://nikitesh.com/assets/images/nikitesh.png'},
+      {name: 'og:image:width', content: '660'},
+      {name: 'og:image:height', content: '660'}
     ]);
   
   }

@@ -1,0 +1,9 @@
+@import 'custom';
+.contactform{
+    @include media-breakpoint-down(md){
+        .form-control{
+            font-size: 24px;
+        }
+    }
+}
+    
