@@ -8,7 +8,7 @@ import { HomepageComponent } from './home/homepage/homepage.component';
 import { NotfoundComponent } from './shared/notfound/notfound.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/', pathMatch: 'full' },
+  // { path: '',   redirectTo: '/', pathMatch: 'full' },
   { path: '', component: HomepageComponent },
   { path: 'home/#/home', component: HomepageComponent },
   // { path: 'add-user', component: AddUserComponent },

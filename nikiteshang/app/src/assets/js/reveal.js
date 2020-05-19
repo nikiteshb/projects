@@ -6195,8 +6195,7 @@
 
 
 
-$(document).ready(function () {
-
+$(window).on('load', function() {
 	Reveal.initialize({
 		controls: true,
 		progress: false,
@@ -6215,14 +6214,14 @@ $(document).ready(function () {
 			activeclass: 'active'
 		},
 		dependencies: [
-			// { src: 'assets/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-			// { src: 'assets/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-			// { src: 'assets/plugin/highlight/highlight.js' },
-			// { src: 'assets/plugin/search/search.js', async: true },
-			// { src: 'assets/plugin/zoom-js/zoom.js', async: true },
-			// { src: 'assets/plugin/notes/notes.js', async: true },
-			{ src: './assets/plugin/simplemenu/simplemenu.js' },
-			{ src: './assets/plugin/verticator/verticator.js' },
+			{ src: './assets/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+			{ src: './assets/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+			// { src: './assets/plugin/highlight/highlight.js'},
+			// { src: './assets/plugin/search/search.js', async: true },
+			// { src: './assets/plugin/zoom-js/zoom.js', async: true },
+			// { src: './assets/plugin/notes/notes.js', async: true },
+			{ src: './assets/plugin/simplemenu/simplemenu.js'},
+			{ src: './assets/plugin/verticator/verticator.js'},
 		]
 	});
 
