@@ -1,0 +1,23 @@
+<div class="container custom-container">
+    <div class="col-12 col-md-4 py-5 mx-auto">
+      
+      <h3 class="mb-3 text-center">Update user</h3>
+  
+      <div class="form-group">
+        <input type="text" [(ngModel)]="user.name" class="form-control" placeholder="Name">
+      </div>
+  
+      <div class="form-group">
+        <input type="text" [(ngModel)]="user.age" class="form-control" placeholder="age">
+      </div>
+  
+      <div class="form-group">
+        <input type="text" [(ngModel)]="user.location" class="form-control" placeholder="location">
+      </div>
+  
+      <div class="form-group">
+        <button class="btn btn-success" (click)="updateUser()">Update User</button>
+      </div>
+      
+    </div>
+  </div>
