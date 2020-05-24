@@ -24,9 +24,11 @@ import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.c
 import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
 import { SharedModule } from './shared/shared.module';
+import { HomepageComponent } from './homepage/homepage.component';
 @NgModule({
   declarations: [
     AppComponent,
+    HomepageComponent,
     // IndexComponent,
     // ProfilepageComponent,
     // RegisterpageComponent,
