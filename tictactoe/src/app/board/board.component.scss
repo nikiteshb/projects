@@ -1,10 +1,10 @@
 main{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 30vw 30vw 30vw;
     grid-gap: 0px;
 }
 
 app-square{
     border: 1px solid lightgray;
-    height: 200px;
+    height: 30vw;
 }
