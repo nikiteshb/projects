@@ -9,7 +9,7 @@ import { RestApiService } from 'src/app/shared/rest-api.service';
 export class ListUserComponent implements OnInit {
   User: any = [];
   currentPage = 1;
-  itemsPerPage = 10;
+  itemsPerPage = 5;
   pageSize: number;
   
   constructor(
