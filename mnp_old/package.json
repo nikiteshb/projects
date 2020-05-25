@@ -1,11 +1,11 @@
 {
-  "name": "blk-design-system-angular",
+  "name": "mnp-pwa",
   "version": "1.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "description": "BLK Design System Angular: Free Angular Design System For Bootstrap 4 and Angular",
+    "description": "My new Photograph",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -77,7 +77,7 @@
     "jw-bootstrap-switch-ng2": "2.0.5",
     "ngx-bootstrap": "5.1.2",
     "nouislider": "11.1.0",
-    "rxjs": "6.5.4",
+    "rxjs": "6.5.5",
     "tslib": "1.11.1",
     "zone.js": "0.10.3"
   },
