@@ -8,12 +8,13 @@ import { HttpClientModule } from "@angular/common/http";
 
 
 import { RefrenceModule } from './refrence/refrence.module';
-import { HomepageComponent } from './homepage/homepage.component';
+import { SharedModule } from './shared/shared.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserAnimationsModule,
@@ -21,7 +22,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    RefrenceModule
+    RefrenceModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
