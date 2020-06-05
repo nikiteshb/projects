@@ -1,0 +1,14 @@
+@mixin square ($width,$height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin max-square ($width,$height) {
+  max-width: $width;
+  max-height: $height;
+}
+
+@mixin min-square ($width,$height) {
+  min-width: $width;
+  min-height: $height;
+}

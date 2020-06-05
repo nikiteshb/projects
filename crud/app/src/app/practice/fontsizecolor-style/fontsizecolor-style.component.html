@@ -1,0 +1,41 @@
+<div class="container py-3">
+    <h1>{{name}}</h1>
+    <h2>{{name}}</h2>
+    <h3>{{name}}</h3>
+    <h4>{{name}}</h4>
+    <h5>{{name}}</h5>
+    <h6>{{name}}</h6>
+
+    <div class="py-2">
+        <select (change)="setColor($event)">
+            <option value="text-primary">primary</option>
+            <option value="text-secondary">secondary</option>
+            <option value="text-danger">danger</option>
+            <option value="text-warning">warning</option>
+        </select>
+
+        <select (change)="setFontStyle($event)">
+            <option value="font-weight-bold">bold</option>
+            <option value="text-underline">underline</option>
+            <option value="font-italic">italic</option>            
+        </select>
+    </div>
+
+    <p [class]= "textCol">Create a page with static content including features like titles, paragraphs, body, hyperlinks etc. Use AngularJS to:</p>
+
+    <a href="{{link}}" target="_blank">{{link}}</a>
+    <br>
+    <p>Type something in input</p>
+    <input type="text" (keyup)="setText($event)"/>
+    <br>
+    <br>
+    <p>you can change size of text</p>
+    <button (click)="setSize('inc')">+</button>
+    <button (click)="setSize('dec')">-</button>
+    <br>
+    <br>
+    <p>current text size :{{textSize}} px</p>
+    <br>
+    <br>
+    <p [style.fontSize.px] = "textSize">text- size change {{changingText}}</p>
+</div>

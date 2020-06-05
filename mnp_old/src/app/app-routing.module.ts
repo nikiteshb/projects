@@ -10,12 +10,12 @@ import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.c
 import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
-  { path: "", redirectTo: "old_home", pathMatch: "full" },
-  { path: "home", component: HomepageComponent },
-  { path: "old_home", component: IndexComponent },
-  { path: "old_profile", component: ProfilepageComponent },
-  { path: "old_register", component: RegisterpageComponent },
-  { path: "old_landing", component: LandingpageComponent }
+  { path: "", redirectTo: "home", pathMatch: "full" },
+  // { path: "home", component: HomepageComponent },
+  { path: "home", component: IndexComponent },
+  { path: "profile", component: ProfilepageComponent },
+  { path: "register", component: RegisterpageComponent },
+  { path: "landing", component: LandingpageComponent }
 ];
 
 @NgModule({

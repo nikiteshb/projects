@@ -25,6 +25,9 @@ import { HomeComponent } from './home/home.component';
     RefrenceModule,
     SharedModule
   ],
+  exports:[
+    SharedModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

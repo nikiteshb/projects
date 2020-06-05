@@ -9,6 +9,7 @@ import { ListUserComponent } from './users/list-user/list-user.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
+import { PracticeModule } from './practice/practice.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbPaginationModule
+    NgbPaginationModule,
+    PracticeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

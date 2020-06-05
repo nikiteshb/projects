@@ -1,0 +1,5 @@
+@import 'core';
+
+.footer-brand{
+    @include max-square(100px,100px);
+}

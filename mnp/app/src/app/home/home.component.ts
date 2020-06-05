@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+ 
   constructor() { }
 
+  mainTitle = "My New Photograph";
+
   ngOnInit(): void {
+    var body = document.getElementsByTagName("body")[0];
+    body.classList.add("refrence-page");    
+  }
+
+  ngOnDestroy() {
+    var body = document.getElementsByTagName("body")[0];
+    body.classList.remove("refrence-page");
   }
 
 }

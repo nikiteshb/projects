@@ -1,10 +1,23 @@
 main{
     display: grid;
-    grid-template-columns: 30vw 30vw 30vw;
-    grid-gap: 0px;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 0px;    
+    padding: 15px 0;
 }
 
 app-square{
     border: 1px solid lightgray;
-    height: 30vw;
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width:767px){
+    main{
+        max-width: 95vw;
+    }
+    app-square{
+        border: 1px solid lightgray;
+        height: 30vw;
+        width: 30vw;
+    }
 }

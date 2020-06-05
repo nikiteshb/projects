@@ -27,10 +27,16 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/scss/"
+              ]
+            },
             "styles": [
               "src/styles.scss",
               "src/assets/css/nucleo-icons.css",
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "src/assets/scss/core.scss",
               "src/assets/scss/mnp-style.scss",
               "src/assets/demo/demo.css"
             ],
